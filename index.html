@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* html {
+      scroll-behavior: smooth;
+    } */
+
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      /* margin-left: 150px; */
+    }
+
+    * {
+      margin-left: 0px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-4 bg-white h-16 shadow relative z-10">
+    <div class="pt-2 pb-2">
+      <img src="images/logo_xy.png" alt="Logo" class="w-40  h-auto"> <!-- Adjust the size as needed -->
+    </div>
+    <nav class="hidden md:flex">
+      <a href="home" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">About</a>
+      <a href="#service" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Service</a>
+      <!-- <a href="#support" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Support</a> -->
+      <a href="#testimonials" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Testimonials</a>
+      <a href="#faq" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">FAQ</a>
+      <!-- <a href="#newslatter" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Newslatter</a> -->
+      <a href="#plan" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Plan</a>
+      <a href="mailto:support@xylenetech.com" class="text-gray-700 hover:text-blue-600 mr-2 hover:underline">Contact</a>
+      <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+        <button
+          class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Appointment</button>
+      </a>
+    </nav>
+    <button id="menu-btn" class="block md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+  </header>
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-16 left-0 right-0 z-10">
+    <nav class="flex flex-col items-center py-4">
+      <a href="home" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">About</a>
+      <a href="#service" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">Service</a>
+      <!-- <a href="#support" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Support</a> -->
+      <a href="#testimonials" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">Testimonials</a>
+      <a href="#faq" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">FAQ</a>
+      <!-- <a href="#newslatter" class="text-gray-700 hover:text-blue-600 mr-4 hover:underline">Newslatter</a> -->
+      <a href="#plan" class="text-gray-700 hover:text-blue-600 mr-4 pb-2 hover:underline">Plan</a>
+      <a href="mailto:hr@xylenetech.com" class="text-gray-700 hover:text-blue-600 mr-1 pb-2 hover:underline">Contact</a>
+      <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+        <button
+          class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Appointment</button>
+      </a>
+    </nav>
+  </div>
+
+
+  <!-- Main Section -->
+  <main>
+    <div class="flex flex-col lg:flex-row items-start p-4 lg:p-12 text-left px-8 lg:pl-12 lg:pt-20">
+      <!-- Left Section -->
+      <div class="flex-col mb-8 lg:mr-16">
+        <h2 class="text-blue-600 mb-2 text-xl font-bold">
+          Welcome To
+          <span style="color: #635092;">Xylene</span><span style="color: #F3A529;">Tech</span>
+        </h2>
+        <h1 class="text-xl lg:text-lg font-black mb-4">Revolutionize Your Shopify Customer
+          Support with<br class="hidden lg:block"> XyleneTech's AI Auto-Response Solutions</h1>
+        <!-- Mobile Video -->
+        <div class="lg:hidden mb-8 w-full">
+          <video src="images/video_2.mp4" autoplay loop muted class="w-full rounded-lg lg:rounded-2xl shadow-lg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="text-gray-800 mb-8"> Struggling with Shopify and Freshdesk management?<br> XyleneTech's custom AI
+          auto-response solution<br> streamlines support and saves you time. We also<br class="hidden lg:block"> develop
+          custom CRM and software applications tailored<br> to your business. Schedule a demo today to enhance<br> your
+          customer
+          support and overall efficiency!</p>
+        <div class="mb-8">
+          <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+            <button
+              class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">
+              Book Your Appointment
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Right Section for the Image -->
+      <div class="hidden lg:flex flex-1 lg:ml-auto pb-12 w-full">
+        <video src="images/video_2.mp4" autoplay loop muted class="w-full rounded-lg lg:rounded-2xl shadow-lg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Services Section -->
+  <section class="bg-cover bg-gray-200 bg-center bg-no-repeat pt-2 pb-8 px-4 md:px-12 lg:px-24">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl md:text-2xl lg:text-4xl font-extrabold mb-4 mt-12 ml-0 md:ml-8">How to Uses<br> AI
+        Auto-Response
+        Solutions</h2>
+      <p class="text-gray-700 mb-4 ml-0 md:ml-12">Set up AI auto-responses to automate customer support, providing quick
+        and accurate replies while saving time.</p>
+    </div>
+  </section>
+  <section class="bg-gray-200 px-4 md:px-8 lg:px-16 pt-4 pb-12 custom-background">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+      <div
+        class="bg-white p-4 md:p-6 hover:bg-blue-200 rounded-lg shadow-md hover:font-extrabold transition duration-300 hover:shadow-2xl group">
+        <div class="flex items-center justify-center mb-4">
+          <div class="bg-blue-500 text-white p-4 rounded-full relative group-hover:animate-pulse">
+            <img src="images/integration.png" alt="integration" class="w-full h-full rounded-full shadow-md">
+            <span
+              class="absolute top-0 right-0 -mt-2 -mr-2 border border-white bg-blue-500 h-6 w-6 text-center text-sm rounded-full">1</span>
+          </div>
+        </div>
+        <h5 class="text-lg md:text-xl font-semibold mb-2">API Integration</h5>
+        <p class="text-gray-600">Connects systems for seamless data exchange and functionality.</p>
+      </div>
+      <div
+        class="bg-white p-4 md:p-6 hover:bg-red-200 rounded-lg shadow-md hover:font-extrabold transition duration-300 hover:shadow-2xl group">
+        <div class="flex items-center justify-center mb-4">
+          <div class="bg-red-500 text-white p-4 rounded-full relative group-hover:animate-pulse">
+            <img src="images/download.png" alt="Fetching" class="w-full h-full rounded-full shadow-md">
+            <span
+              class="absolute top-0 right-0 -mt-2 -mr-2 border border-white bg-red-500 h-6 w-6 text-center text-sm rounded-full">2</span>
+          </div>
+        </div>
+        <h5 class="text-lg md:text-xl font-semibold mb-2">Data Fetching</h5>
+        <p class="text-gray-600">Retrieves and loads data from a source for use in applications or analysis.</p>
+      </div>
+      <div
+        class="bg-white p-4 md:p-6 hover:bg-green-200 rounded-lg shadow-md hover:font-extrabold transition duration-300 hover:shadow-2xl group">
+        <div class="flex items-center justify-center mb-4">
+          <div class="bg-green-500 text-white p-4 rounded-full relative group-hover:animate-pulse">
+            <img src="images/engineering.png" alt="integration" class="w-full h-full rounded-full shadow-md">
+            <span
+              class="absolute top-0 right-0 -mt-2 -mr-2 border border-white bg-green-500 h-6 w-6 text-center text-sm rounded-full">3</span>
+          </div>
+        </div>
+        <h5 class="text-lg md:text-xl font-semibold mb-2">AI Integration</h5>
+        <p class="text-gray-600">Embeds AI capabilities into systems to enhance functionality & auto tasks.</p>
+      </div>
+      <div
+        class="bg-white p-4 md:p-6 hover:bg-purple-200 rounded-lg shadow-md hover:font-extrabold transition duration-300 hover:shadow-2xl group">
+        <div class="flex items-center justify-center mb-4">
+          <div class="bg-purple-500 text-white p-4 rounded-full relative group-hover:animate-pulse">
+            <img src="images/customer-support.png" alt="supporting" class="w-full h-full rounded-full shadow-md">
+            <span
+              class="absolute top-0 right-0 -mt-2 -mr-2 border border-white bg-purple-500 h-6 w-6 text-center text-sm rounded-full">4</span>
+          </div>
+        </div>
+        <h5 class="text-lg md:text-xl font-semibold mb-2">Supporting</h5>
+        <p class="text-gray-600">Offering help and resources for smooth operation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about section -->
+  <section class="pt-12 bg-white" id="about">
+    <div class="container mx-auto px-4 md:px-8 lg:px-12 md:flex">
+      <div class="flex-1 flex justify-center md:mb-0 md:mr-8">
+        <div class="bg-white-600 flex flex-col items-center">
+          <img src="images/Arunava.jpg" alt="Arunava Chowdhury" class="w-64 h-auto md:w-80 rounded-lg shadow-md">
+        </div>
+      </div>
+      <div class="flex-1 bg-white mt-8 md:mt-0 mx-4 md:mx-0">
+        <div class="pt-8 md:pt-16">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+            Arunava Chowdhury <br>
+            <span class="text-xl font-medium">Founder at <span
+                style="color: #635092; font-weight: bold;">Xylene</span><span
+                style="color: #F3A529; font-weight: bold;">Tech</span></span>
+          </h2>
+          <p class="text-gray-600 mb-4">At XyleneTech, we specialize in custom AI automation and web application
+            development. Our team is dedicated to creating tailored AI solutions that streamline processes and enhance
+            efficiency, alongside developing robust web applications designed to meet your specific business needs.
+            Whether you require advanced automation systems or innovative web solutions, we are here to deliver
+            high-quality, bespoke services to drive your success.</p>
+          <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+            <button
+              class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Book
+              Your Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- laptop section -->
+  <section class="flex flex-col lg:flex-row ml-4 mt-4 items-start justify-between text-left p-4 md:p-12" id="service">
+    <div>
+      <h2 class="text-blue-600 mb-2 mt-4">Freshdesk</h2>
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-4">Save time & improve customer <br
+          class="hidden md:inline">satisfaction with AI!</h1>
+      <!-- Mobile Image -->
+      <div class="lg:hidden mb-8 mt-4 mr-4 w-full">
+        <img src="images/laptop_2.png" alt="Laptop Image" class="h-200 w-200 border-10 border-black rounded-3xl" />
+      </div>
+      <p>AI Auto-Response integration with Freshdesk summarizes customer messages,<br class="hidden md:inline"> analyses
+        sentiment & recommends replies to your agents. For custom fields<br class="hidden md:inline"> automation,
+        language detection, custom
+        prompts and multi language support,<br class="hidden md:inline"> please check the "AI Auto-Response Assistant
+        (Multilingual + Custom Fields)".</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 gap-x-12">
+        <div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-check rounded-full bg-blue-500 p-2 text-white mr-2" style="font-size: 10px;"></i>
+            <span class="font-bold text-lg">AI Understanding</span>
+          </div>
+          <p class="pl-8">AI will process your<br> Freshdesk tickets.</p>
+        </div>
+        <div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-check rounded-full bg-red-500 p-2 text-white mr-2" style="font-size: 10px;"></i>
+            <span class="font-bold text-lg">AI Training</span>
+          </div>
+          <p class="pl-8">Teaching AI models using<br> data to improve their<br> performance and accuracy.</p>
+        </div>
+        <div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-check rounded-full bg-green-500 p-2 text-white mr-2" style="font-size: 10px;"></i>
+            <span class="font-bold text-lg">Response Generate</span>
+          </div>
+          <p class="pl-8">Creates automated replies<br> based on input data.</p>
+        </div>
+        <div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-check rounded-full bg-purple-500 p-2 text-white mr-2" style="font-size: 10px;"></i>
+            <span class="font-bold text-lg">Sending Draft</span>
+          </div>
+          <p class="pl-8">Data will be generated and<br> saved as a draft.</p>
+        </div>
+      </div>
+      <div class="mt-8 md:mt-12 pl-2">
+        <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+          <button
+            class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Book
+            Your Appointment</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Laptop Image for Desktop -->
+    <div class="hidden lg:flex flex-1 lg:ml-auto  mt-20 lg:w-full">
+      <img src="images/laptop_2.png" alt="Laptop Image"
+        class="h-500 w-500 lg:h-500 lg:w-500 lg:mt-0 lg:ml-24 border-40 border-black rounded-3xl" />
+    </div>
+
+  </section>
+
+
+
+  <!-- response section -->
+  <section class="bg-cover bg-gray-200 bg-center bg-no-repeat pt-2 pb-2 px-4 md:px-12 lg:px-24" id="service">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl md:text-2xl lg:text-4xl font-extrabold mb-4 mt-12 ml-0 md:ml-8">Demo Video and Image</h2>
+      <p class="text-gray-700 mb-1 ml-0 md:ml-12">
+        Visual materials created to showcase product features, functionality,<br> and benefits, helping users understand
+        and engage with the product more effectively.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-cover bg-gray-200 bg-center bg-no-repeat pt-2 px-0 md:px-0 lg:px-2 lg:flex lg:flex-1">
+    <div class="flex flex-col items-center lg:flex-row lg:ml-auto lg:pb-16 lg:w-full">
+      <img src="images/demo.png" alt="Image"
+        class="h-100 w-100 lg:border-20 border-10 border-black rounded-3xl lg:h-200 lg:w-200 lg:ml-12 lg:mt-6" />
+      <div
+        class="mt-4 w-full h-64 sm:h-80 md:h-96 lg:w-500 lg:h-300 lg:ml-6 lg:mr-12 rounded-lg lg:rounded-2xl shadow-lg overflow-hidden">
+        <iframe class="w-full h-full rounded-lg lg:rounded-2xl"
+          src="https://www.youtube.com/embed/reVy8aLdP38?si=tz2-PsxLp39hMGdR&mute=0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Button section -->
+  <section class="bg-gray-200 flex items-center justify-center py-8 lg:pr-48 lg:pb-16 px-4 md:px-12 lg:px-24">
+    <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+      <button
+        class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Book
+        Your Appointment</button>
+    </a>
+  </section>
+
+
+  <!-- testimonial -->
+  <section class="bg-blue-800 flex items-center justify-center h-auto lg:h-3/4 px-4" id="testimonials">
+    <div class="relative w-full max-w-4xl bg-blue-800 text-white rounded-xl p-4 lg:p-20">
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-4">
+        <button id="prevBtn" class="text-2xl text-white hover:text-gray-400 mb-4 lg:mb-0">
+          <span>&larr;</span>
+        </button>
+        <div class="text-center flex-1">
+          <img id="testimonial-image" src="images/human3.avif" alt="Profile Image"
+            class="w-20 h-20 rounded-full mx-auto mb-2">
+          <h2 class="text-lg font-bold" id="testimonial-name">Jason Response</h2>
+          <p class="text-sm text-gray-500 font-bold" id="testimonial-date">April 14, 2022</p>
+        </div>
+        <button id="nextBtn" class="text-2xl text-white hover:text-gray-400 mt-4 lg:mt-0">
+          <span>&rarr;</span>
+        </button>
+      </div>
+      <p class="text-center mb-2 text-base font-medium" id="testimonial-text">
+        Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a
+        blinding shot starkers.
+      </p>
+      <div class="text-center">
+        <div class="inline-flex">
+          <span class="text-yellow-500">&#9733;</span>
+          <span class="text-yellow-500">&#9733;</span>
+          <span class="text-yellow-500">&#9733;</span>
+          <span class="text-yellow-500">&#9733;</span>
+          <span class="text-yellow-500">&#9733;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- advertisement section -->
+  <section class="bg-gray-200 flex items-center justify-center pt-12">
+    <div class="relative w-500  max-w-6xl p-8 rounded-lg shadow-lg overflow-hidden pb-8 hidden lg:block lg:h-auto "
+      style="background-image: url('images/adver.png'); background-size: cover; background-position: center;">
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-center h-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ section -->
+  <section class="bg-gray-200 pb-12" id="faq">
+    <div class="container mx-auto p-4 sm:p-8">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-4 mt-8">Frequently asked questions</h2>
+      <p class="text-center font-semibold text-gray-500 mb-8">Different layouts and styles for team sections.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 sm:px-8">
+        <div class="faq-item bg-white p-4 rounded shadow-md">
+          <button class="faq-question text-lg rounded font-semibold flex justify-between text-left w-full">
+            What is the main benefit of using your AI auto-response solution?
+            <span class="faq-toggle transform transition-transform duration-300">&#9662;</span>
+          </button>
+          <div class="faq-answer mt-2 ">
+            <p class="text-gray-700">
+              Our AI auto-response solution streamlines customer support by automating replies,
+              ensuring timely and accurate responses. This improves efficiency and frees up time for your team to
+              focus
+              on more complex tasks.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-item bg-white p-4 rounded shadow-md">
+          <button class="faq-question text-lg font-semibold flex justify-between w-full">
+            How does AI integration work with existing systems?
+            <span class="faq-toggle transform transition-transform duration-300">&#9662;</span>
+          </button>
+          <div class="faq-answer mt-2">
+            <p class="text-gray-700">AI integration involves connecting our AI technology with your existing systems
+              via
+              APIs. This allows seamless data exchange and enhances functionality, enabling automated processes and
+              real-time updates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white p-4 rounded shadow-md">
+          <button class="faq-question text-lg font-semibold flex justify-between w-full">
+            What kind of support do you offer after implementation?
+            <span class="faq-toggle transform transition-transform duration-300">&#9662;</span>
+          </button>
+          <div class="faq-answer mt-2">
+            <p class="text-gray-700">We provide ongoing support, including troubleshooting, updates, and maintenance
+              to
+              ensure smooth operation. Our team is available to assist with any issues or questions that arise
+              post-implementation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white p-4 rounded shadow-md">
+          <button class="faq-question text-lg font-semibold flex justify-between w-full">
+            Can I schedule a demo to see how your solutions work?
+            <span class="faq-toggle transform transition-transform duration-300">&#9662;</span>
+          </button>
+          <div class="faq-answer mt-2">
+            <p class="text-gray-700">Yes, you can schedule a demo to see our solutions in action. Contact us to book a
+              convenient time, and we will walk you through the features and benefits tailored to your specific needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-800 text-md text-center mt-12">
+        Can't find an answer? <a href="mailto:support@xylenetech.com" class="text-blue-500">Email us</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- plan section -->
+  <section class="mt-12 lg:pt-12 pt-4">
+    <div class="flex flex-col lg:flex-row lg:h-96 ml-8" id="plan">
+      <div class="w-full lg:w-96 bg-white pt-0 lg:pt-16 lg:pl-20 flex flex-col items-start mb-8 lg:mb-0">
+        <div class="mb-2 flex items-center">
+          <div class="settings-container flex p-2 rounded group hover:text-blue-500">
+            <div class="rounded-full mr-2">
+              <img src="images/understandi.png" alt="Profile Image"
+                class=" rounded-full text-gray-500 group-hover:text-blue-500">
+            </div>
+            <span class="ml-2 group-hover:text-blue-500 cursor-pointer">AI Understanding</span>
+          </div>
+        </div>
+        <div class="mb-2 flex items-center">
+          <div class="settings-container flex p-2 rounded group hover:text-blue-500">
+            <div class="rounded-full mr-2">
+              <img src="images/machine-learning.png" alt="Profile Image"
+                class=" rounded-full text-gray-500 group-hover:text-blue-500">
+              <!-- <i class="fas fa-cog text-gray-500 group-hover:text-blue-500"></i> -->
+            </div>
+            <span class="ml-2 group-hover:text-blue-500 cursor-pointer">AI Training</span>
+          </div>
+        </div>
+        <div class="mb-2 flex items-center">
+          <div class="settings-container flex p-2 rounded group hover:text-blue-500">
+            <div class="rounded-full mr-2">
+              <img src="images/quick-response.png" alt="Profile Image"
+                class=" rounded-full text-gray-500 group-hover:text-blue-500">
+              <!-- <i class="fas fa-cog text-gray-500 group-hover:text-blue-500"></i> -->
+            </div>
+            <span class="ml-2 group-hover:text-blue-500 cursor-pointer">Response Generate</span>
+          </div>
+        </div>
+        <div class="mb-2 flex items-center">
+          <div class="settings-container flex p-2 rounded group hover:text-blue-500">
+            <div class="rounded-full mr-2">
+              <img src="images/document.png" alt="Profile Image"
+                class=" rounded-full text-gray-500 group-hover:text-blue-500">
+              <!-- <i class="fas fa-cog text-gray-500 group-hover:text-blue-500"></i> -->
+            </div>
+            <span class="ml-2 group-hover:text-blue-500 cursor-pointer">Sending Draft</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative bg-white p-8 border mr-8 hover:shadow-2xl rounded-lg shadow-xl lg:mr-20 h-300 mb-8 lg:mb-0">
+        <div class="absolute -top-3 right-4">
+          <span class="bg-red-500 text-white rounded-full px-2 py-1 text-sm font-bold shadow-lg">Most Popular</span>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold pb-6">Gold Plan</h2>
+          <p class="text-black text-2xl">$<span class="text-4xl font-bold">60</span><span class="text-sm">/year</span>
+          </p>
+        </div>
+        <ul class="my-4 text-left font-medium">
+          <li class="flex items-center mb-2 pt-2">
+            <div class="bg-green-50 rounded-full px-1 mr-2">
+              <i class="fas fa-check text-red-400 " style="font-size: 10px;"></i>
+            </div>
+            Daily 60 Automated Replies
+          </li>
+          <li class="flex items-center mb-8">
+            <div class="bg-green-50 rounded-full px-1 mr-2">
+              <i class="fas fa-check text-red-400" style="font-size: 10px;"></i>
+            </div>
+            24/7 Support
+          </li>
+        </ul>
+        <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+          <button class="bg-red-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-700">Choose Plan</button>
+        </a>
+      </div>
+      <div class="w-full lg:w-auto lg:flex lg:justify-end lg:items-center lg:ml-2">
+        <div class="text-left p-8 rounded-lg">
+          <!-- <h3 class="text-blue-600 text-sm font-semibold pb-4">Custom Reactions</h3> -->
+          <h1 class="text-2xl lg:text-4xl font-black text-gray-800 mb-4">Book Your First Demo Call Today!</h1>
+          <p class="text-gray-600 mb-6">Contact us to schedule your initial demo and experience<br> how our solutions
+            can enhance your business.<br> Don't miss out—reserve your spot now!</p>
+          <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+            <button
+              class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Book
+              Your
+              Appointment</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- newslatter -->
+  <section class="bg-white flex items-center justify-center min-h-screen mx-4 " id="newslatter">
+    <div class="relative w-full max-w-6xl p-8 lg:p-16 lg:pt-4 rounded-lg shadow-lg overflow-hidden pb-8"
+      style="background-image: url('images/newslatter.jpg'); background-size: cover; background-position: center;">
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-center h-full">
+        <!-- Text and Form Section -->
+        <div class="flex-1 text-center md:text-center mb-8 md:mb-0">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white pt-8">Automate Ticket Responses<br> with
+            Our
+            AI.
+          </h1>
+          <p class="text-base sm:text-lg text-gray-200 mt-4">Streamline your customer support by leveraging our AI
+            technology to automatically handle business tickets. Enhance efficiency and ensure timely responses with
+            minimal manual intervention.</p>
+          <div class="mt-6 flex justify-center space-x-4">
+            <a href="https://calendly.com/xylenetechofficial/30-minute-free-demo-consultation-call">
+              <button
+                class="px-4 py-2 text-white rounded transition duration-300 animate-pulse-colors bg-gradient-to-r from-[#635092] to-black hover:from-black hover:to-red-500">Book
+                Your
+                Appointment</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="bg-black text-white px-4 pb-12" id="contact">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+      <div class="appie mb-2 md:mb-0">
+        <img src="images/logo_xy.png" alt="Appie" class="h-24 w-36 ml-3 md:h-40 md:w-60">
+        <p class="mt-4 md:mt-0 mb-4 md:mb-8 ml-8 ">Streamline customer support with<br> AI-generated, accurate, and
+          timely<br> responses, reducing manual effort<br> and improving efficiency.</p>
+        <!-- <a href="#" class="text-white hover:text-blue-700 ml-8 font-semibold">Read More</a> -->
+        <div class="social-links mt-4 md:mt-6 flex space-x-3 ml-8">
+          <a href="https://www.facebook.com/xylenetech/" class="text-white hover:text-blue-700"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/xylenetech/" class="text-white hover:text-blue-700"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row mb-8 ml-4 md:mb-0 pl-4 md:pl-20">
+        <!--Privacy Policy -->
+
+        <body class="bg-gray-800 flex flex-col justify-center items-center min-h-screen space-y-4">
+
+          <!-- Trigger Elements -->
+          <div class="flex justify-center md:justify-start mb-4 md:mb-0 md:mr-20">
+            <h4 id="privacy-policy-trigger" class="font-semibold mb-2 text-white text-xl cursor-pointer">Privacy
+              Policy
+            </h4>
+          </div>
+          <div class="flex justify-center md:justify-start mb-4 md:mb-0 md:mr-20">
+            <h4 id="return-policy-trigger" class="font-semibold mb-2 text-white text-xl cursor-pointer">Return Policy
+            </h4>
+          </div>
+
+          <!-- Privacy Policy Modal -->
+          <div id="privacy-policy-modal"
+            class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-white rounded-lg shadow-lg p-5 pb-6 md:w-1/2 w-full mx-2">
+              <div class="flex justify-between items-center mb-4">
+                <h4 class="text-2xl font-bold">Privacy Policy</h4>
+                <button id="close-privacy-modal"
+                  class="text-gray-700 hover:text-gray-900 focus:outline-none">&times;</button>
+              </div>
+              <div class="overflow-y-auto max-h-80">
+                <p class="text-gray-900">
+                  <b class="text-xl font-bold">Privacy Policy</b><br>
+                  We value your privacy and are committed to protecting your personal information. This privacy policy
+                  outlines how we
+                  collect, use, and safeguard your data. We collect information that you provide to us directly, such
+                  as
+                  when you
+                  register on our site, subscribe to our newsletter, or fill out a form. We use this information to
+                  improve our services,
+                  personalize your experience, and communicate with you. We implement a variety of security measures
+                  to
+                  maintain the
+                  safety of your personal information. However, no method of transmission over the internet or
+                  electronic storage is
+                  100% secure, so we cannot guarantee its absolute security. By using our site, you consent to our
+                  website's privacy
+                  policy.
+                </p>
+                <!-- Add more content as needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Return Policy Modal -->
+          <div id="return-policy-modal"
+            class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-white rounded-lg shadow-lg p-5 pb-6 md:w-1/2 w-full mx-2">
+              <div class="flex justify-between items-center mb-4">
+                <h4 class="text-2xl font-bold">Return Policy</h4>
+                <button id="close-return-modal"
+                  class="text-gray-700 hover:text-gray-900 focus:outline-none">&times;</button>
+              </div>
+              <div class="overflow-y-auto max-h-80">
+                <p class="text-gray-900">
+                  <b class="text-xl font-bold">Return Policy</b><br>
+                  At XyleneTech, we prioritize your satisfaction and strive to offer a seamless shopping experience.
+                  If
+                  you are not completely satisfied with your purchase, we offer a hassle-free return policy within 30
+                  days of receipt. Items must be unused, in their original packaging, and accompanied by a proof of
+                  purchase. To initiate a return, please contact our customer service team who will guide you through
+                  the process. Once the return is received and inspected, we will process your refund within 7-10
+                  business days. Please note that return shipping costs are the responsibility of the customer unless
+                  the item is defective or we made an error with your order. Custom or personalized items are not
+                  eligible for returns. Thank you for shopping with us and we appreciate your understanding and
+                  cooperation.
+                </p>
+                <!-- Add more content as needed -->
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Privacy Policy Modal
+            document.getElementById('privacy-policy-trigger').addEventListener('click', function () {
+              document.getElementById('privacy-policy-modal').classList.remove('hidden');
+              document.body.classList.add('overflow-hidden');
+            });
+
+            document.getElementById('close-privacy-modal').addEventListener('click', function () {
+              document.getElementById('privacy-policy-modal').classList.add('hidden');
+              document.body.classList.remove('overflow-hidden');
+            });
+
+            // Return Policy Modal
+            document.getElementById('return-policy-trigger').addEventListener('click', function () {
+              document.getElementById('return-policy-modal').classList.remove('hidden');
+              document.body.classList.add('overflow-hidden');
+            });
+
+            document.getElementById('close-return-modal').addEventListener('click', function () {
+              document.getElementById('return-policy-modal').classList.add('hidden');
+              document.body.classList.remove('overflow-hidden');
+            });
+          </script>
+        </body>
+
+
+
+      </div>
+
+      <div class="get-in-touch pr-8 ml-8 md:pt-12">
+        <h4 class="font-bold text-white text-xl">Get In Touch</h4>
+        <p class="mb-2 mt-2"><i class="fas fa-envelope mr-2"></i> support@xylenetech.com</p>
+        <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +91 75070 39755</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Pune,Maharashtra</p>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-6 md:-mt-6">
+      <p class="text-center text-base sm:text-base">Copyright © 2023 <span style="color: #635092; font-weight: bold;"><a
+            href="https://xylenetech.com/" target="_blank">Xylene</span>
+        <span style="color: #F3A529; font-weight: bold;">Tech</span></a>
+        & <a href="https://applimp.com/" target="_blank">Applimp</a> All rights reserved.
+      </p>
+    </div>
+
+  </footer>
+
+  <script>
+    const faqItems = document.querySelectorAll('.border-b');
+
+    faqItems.forEach((item) => {
+      const header = item.querySelector('.flex');
+      const content = item.querySelector('.px-6.py-4:last-child');
+
+      header.addEventListener('click', () => {
+        content.classList.toggle('hidden');
+      });
+    });
+  </script>
+  <script src="slider.js"></script>
+</body>
+</body>

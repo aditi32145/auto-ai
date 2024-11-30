@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover\:shadow-2xl:hover {
+    box-shadow: 0 50px 80px 20px rgba(0, 0, 0.50, 1.50);
+}
+
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.text-yellow-400 {
+    color: #fcd34d;
+}
+
+.bg-blue-700 {
+    background-color: #2563eb;
+}
+
+.hover\:bg-blue-600:hover {
+    background-color: #2563eb;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.custom-background {
+    background-image: url('images/bg_img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+.bg-center {
+    /* padding: 200px; */
+    background-position: right;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+/* img {
+    border-radius: 50%;
+} */
+
+.company-links {
+    margin-left: 20px;
+}
+
+.support-links {
+    margin-right: 90px;
+    /* Adjust the value as needed */
+}
+
+/* Modal styles */
+#privacy-policy-modal.hidden {
+    display: none;
+}
+
+@keyframes pulse-colors {
+
+    0%,
+    100% {
+        background: linear-gradient(to right, #635092, black);
+    }
+
+    50% {
+        background: linear-gradient(to right, black, #eb345e);
+    }
+}
+
+.animate-pulse-colors {
+    animation: pulse-colors 2s infinite;
+}
